@@ -10,7 +10,7 @@ export default function ServicesPage() {
   const staffing = services.find((service) => service.slug === "healthcare-staffing")!;
   return (
     <>
-      <PageHero eyebrow="Care & support" title="Support shaped around everyday life." intro="From a few well-timed hours to more continuous planned support, we begin by understanding what would make the most meaningful difference." />
+      <PageHero eyebrow="Care & support" title="Support shaped around everyday life." intro="From a few well-timed hours to more continuous planned support, we begin by understanding what would make the most meaningful difference." image="/images/hero-disability-support.webp" imageAlt="A wheelchair user and support companion talking while moving through Dublin" imagePosition="62% center" />
       <section className="services-hub">
         <div className="container">
           <div className="services-hub__intro"><span className="eyebrow">For individuals & families</span><p>Our services are designed for children, adults and older people. Every request is considered individually, with clear discussion about needs, preferences, safety and what Restore can appropriately provide.</p></div>

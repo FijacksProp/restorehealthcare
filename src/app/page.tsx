@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Clock3,
@@ -24,9 +25,9 @@ export default function Home() {
               <Link className="button button--outline" href="/services">View our services</Link>
             </div>
           </div>
-          <div className="home-hero__visual" aria-hidden="true">
-            <div className="orbit orbit--one" /><div className="orbit orbit--two" /><div className="orbit orbit--three" />
-            <div className="visual-core" />
+          <div className="home-hero__visual home-hero__visual--photo">
+            <Image className="home-hero__photo" src="/images/hero-home.webp" alt="An older woman sharing a relaxed conversation with a support professional at home" fill priority sizes="(max-width: 820px) 100vw, 32vw" />
+            <span className="home-hero__photo-wash" aria-hidden="true" />
             <div className="visual-chip visual-chip--one"><span><HeartHandshake size={15} /></span> Support that listens</div>
             <div className="visual-chip visual-chip--two"><span><Sparkles size={15} /></span> Goals that matter</div>
             <p className="visual-caption">A calmer, more connected approach to everyday support.</p>
@@ -73,7 +74,9 @@ export default function Home() {
 
       <section className="difference-section">
         <div className="container difference-grid">
-          <div className="difference-visual" aria-hidden="true">
+          <div className="difference-visual">
+            <Image src="/images/hero-older-person.webp" alt="An older woman tending herbs in her garden with a support companion" fill sizes="(max-width: 820px) 100vw, 48vw" />
+            <span className="difference-visual__shade" aria-hidden="true" />
             <div className="difference-visual__quote"><p>“A good day should still feel like your own.”</p><span>The Restore approach</span></div>
           </div>
           <div>
@@ -92,7 +95,7 @@ export default function Home() {
             <Link className="button button--outline" href="/resources">View all resources <ArrowRight size={17} /></Link>
           </div>
           <div className="article-grid">
-            {articles.map((article) => <Link className="article-card" href={`/resources/${article.slug}`} key={article.slug}><div className="article-card__meta"><span>{article.category}</span><span>{article.readTime}</span></div><h3>{article.title}</h3><p>{article.excerpt}</p><span className="article-card__link">Read article <ArrowRight size={16} /></span></Link>)}
+            {articles.map((article) => <Link className="article-card" href={`/resources/${article.slug}`} key={article.slug}><div className="article-card__media"><Image src={article.image} alt={article.imageAlt} fill sizes="(max-width: 540px) 100vw, (max-width: 820px) 50vw, 33vw" /></div><div className="article-card__meta"><span>{article.category}</span><span>{article.readTime}</span></div><h3>{article.title}</h3><p>{article.excerpt}</p><span className="article-card__link">Read article <ArrowRight size={16} /></span></Link>)}
           </div>
         </div>
       </section>

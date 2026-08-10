@@ -27,6 +27,8 @@ export type Service = {
   intro: string;
   icon: LucideIcon;
   accent: string;
+  image: string;
+  imageAlt: string;
   features: { title: string; text: string }[];
   suitableFor: string[];
   process: string[];
@@ -45,6 +47,8 @@ export const services: Service[] = [
       "Our approach begins with the person, not a diagnosis. We listen to what matters, understand existing strengths and agree practical support that protects dignity while creating more choice in everyday life.",
     icon: Accessibility,
     accent: "mint",
+    image: "/images/hero-disability-support.webp",
+    imageAlt: "A wheelchair user and support companion talking while moving along a Dublin riverside path",
     features: [
       { title: "Daily living support", text: "Respectful assistance with personal routines, meals, mobility and household activities, based on individual preference." },
       { title: "Community participation", text: "Support to attend appointments, activities, education, volunteering and the social occasions that make life feel connected." },
@@ -75,6 +79,8 @@ export const services: Service[] = [
     intro: "Home is personal. Our support fits around the way each person already lives, offering the right level of practical help without taking over the moments they can and want to manage themselves.",
     icon: Home,
     accent: "gold",
+    image: "/images/hero-home-care.webp",
+    imageAlt: "An older man preparing a meal at home with practical support from a companion",
     features: [
       { title: "Personal routines", text: "Discreet assistance with washing, dressing, grooming and other agreed aspects of personal care." },
       { title: "Meals and wellbeing", text: "Support with meal preparation, hydration and routines that contribute to a comfortable day." },
@@ -97,6 +103,8 @@ export const services: Service[] = [
     intro: "Every child and family has a different rhythm. We work with parents and guardians to understand what a good day looks like, then shape practical, respectful support around it.",
     icon: Baby,
     accent: "coral",
+    image: "/images/hero-children-family.webp",
+    imageAlt: "A child taking part in a learning activity with a parent and support professional nearby",
     features: [
       { title: "Home routines", text: "Support with agreed daily routines, communication, play and age-appropriate independence." },
       { title: "Participation", text: "Help to take part in community activities, social opportunities and everyday family experiences." },
@@ -119,6 +127,8 @@ export const services: Service[] = [
     intro: "A little well-timed support can make a meaningful difference. We focus on what a person can do, what they enjoy and what will help them feel secure without losing independence.",
     icon: HandHeart,
     accent: "lavender",
+    image: "/images/hero-older-person.webp",
+    imageAlt: "An older woman tending herbs in her garden alongside a support companion",
     features: [
       { title: "Everyday assistance", text: "Practical help with agreed routines, meals, light household tasks and getting ready for the day." },
       { title: "Companionship", text: "Time for conversation, shared interests and the reassuring presence of a familiar support person." },
@@ -141,6 +151,8 @@ export const services: Service[] = [
     intro: "Taking a break is part of sustainable caring. Respite is planned carefully around the person’s familiar routines so that family carers can step away with greater confidence.",
     icon: BedDouble,
     accent: "blue",
+    image: "/images/hero-respite-care.webp",
+    imageAlt: "A calm respite handover at home while an older man enjoys choosing a record",
     features: [
       { title: "Planned short breaks", text: "Support arranged for agreed periods, whether for a few hours, a day or a longer planned interval." },
       { title: "Familiar routines", text: "Continuity around meals, activities, communication and the details that help someone feel comfortable." },
@@ -163,6 +175,8 @@ export const services: Service[] = [
     intro: "Wellbeing is more than completing tasks. It is also being known, having somewhere to go and feeling part of the world outside the front door.",
     icon: Users,
     accent: "rose",
+    image: "/images/hero-community-support.webp",
+    imageAlt: "Two men choosing a book together in a bright community library",
     features: [
       { title: "Meaningful companionship", text: "Conversation and shared activities guided by the person’s own interests and preferred pace." },
       { title: "Community access", text: "Support to attend local groups, places of worship, appointments, shops and social occasions." },
@@ -185,6 +199,8 @@ export const services: Service[] = [
     intro: "Alongside individual support, Restore is developing staffing solutions for organisations that need dependable people to complement established teams and maintain continuity of care.",
     icon: BriefcaseMedical,
     accent: "navy",
+    image: "/images/hero-healthcare-staffing.webp",
+    imageAlt: "A diverse care team collaborating around a planning table",
     features: [
       { title: "Role-led matching", text: "A careful approach to understanding the setting, responsibilities, shift pattern and team culture." },
       { title: "Flexible cover", text: "Staffing conversations for planned cover, additional capacity and longer-term workforce requirements." },
@@ -209,6 +225,8 @@ export const articles = [
     title: "Starting a care conversation with respect",
     excerpt: "A practical way to discuss support while protecting the person’s voice, choices and sense of control.",
     readTime: "5 min read",
+    image: "/images/hero-resources-contact.webp",
+    imageAlt: "A blank notebook and cup of tea ready for a thoughtful conversation",
     sections: [
       { heading: "Begin with what matters", body: "A care conversation is more constructive when it starts with the person’s priorities rather than a list of perceived problems. Ask what they want to keep doing, what currently feels difficult and what kind of help would feel acceptable." },
       { heading: "Be specific and unhurried", body: "General statements can feel overwhelming. Talk about a real part of the day—preparing a meal, attending an appointment or having company—and allow time for the person to consider the idea." },
@@ -221,6 +239,8 @@ export const articles = [
     title: "What person-centred support means in everyday life",
     excerpt: "Person-centred care is more than a phrase. It should be visible in routines, communication and everyday decisions.",
     readTime: "6 min read",
+    image: "/images/hero-disability-support.webp",
+    imageAlt: "A wheelchair user taking part in community life with a support companion",
     sections: [
       { heading: "The person sets the direction", body: "Good support begins by understanding the person’s communication, interests, relationships and goals. Their preferences guide both the plan and the small decisions made throughout each day." },
       { heading: "Strengths remain central", body: "Support should build on what a person already does well. Assistance is offered where useful, without unnecessarily taking over tasks, decisions or experiences that the person can manage." },
@@ -233,6 +253,8 @@ export const articles = [
     title: "Planning a break when you are a family carer",
     excerpt: "Why planned respite matters and what helps make the handover calmer for everyone involved.",
     readTime: "4 min read",
+    image: "/images/hero-respite-care.webp",
+    imageAlt: "A calm and familiar home setting prepared for respite support",
     sections: [
       { heading: "Rest is part of caring", body: "Time away can help carers protect their health, relationships and capacity to continue providing support. A break does not diminish commitment; it helps make that commitment sustainable." },
       { heading: "Write down the familiar details", body: "A calm handover includes everyday information: preferred meals, communication cues, medication arrangements, favourite activities and what helps when a person feels unsettled." },

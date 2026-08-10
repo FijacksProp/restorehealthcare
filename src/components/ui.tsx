@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Check, ChevronRight, ShieldCheck } from "lucide-react";
 import type { ReactNode } from "react";
 import type { Service } from "@/lib/site-data";
@@ -7,10 +8,11 @@ export function SectionHeading({ eyebrow, title, text, align = "left" }: { eyebr
   return <div className={`section-heading section-heading--${align}`}><span className="eyebrow">{eyebrow}</span><h2>{title}</h2>{text && <p>{text}</p>}</div>;
 }
 
-export function PageHero({ eyebrow, title, intro, children, tone = "dark" }: { eyebrow: string; title: string; intro: string; children?: ReactNode; tone?: "dark" | "light" }) {
+export function PageHero({ eyebrow, title, intro, children, tone = "dark", image, imageAlt = "", imagePosition = "center" }: { eyebrow: string; title: string; intro: string; children?: ReactNode; tone?: "dark" | "light"; image?: string; imageAlt?: string; imagePosition?: string }) {
   return (
-    <section className={`page-hero page-hero--${tone}`}>
+    <section className={`page-hero page-hero--${tone} ${image ? "page-hero--with-image" : ""}`}>
       <div className="page-hero__orb page-hero__orb--one" /><div className="page-hero__orb page-hero__orb--two" />
+      {image && <div className="page-hero__media"><Image src={image} alt={imageAlt} fill priority sizes="(max-width: 820px) 100vw, 48vw" style={{ objectPosition: imagePosition }} /><span aria-hidden="true" /></div>}
       <div className="container page-hero__inner">
         <div><span className="eyebrow">{eyebrow}</span><h1>{title}</h1></div>
         <div className="page-hero__aside"><p>{intro}</p>{children}</div>

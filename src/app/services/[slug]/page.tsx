@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { Breadcrumbs, CareCta, FeatureList, SectionHeading, TrustNote } from "@/components/ui";
@@ -21,6 +22,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   return (
     <>
       <section className="service-detail-hero">
+        <div className="service-detail-hero__media"><Image src={service.image} alt={service.imageAlt} fill priority sizes="(max-width: 820px) 100vw, 48vw" /><span aria-hidden="true" /></div>
         <div className="container">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Services", href: "/services" }, { label: service.shortTitle }]} />
           <div className="service-detail-hero__grid">

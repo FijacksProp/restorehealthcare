@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: "About Us", description: "Learn about
 export default function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="About Restore" title="Built around what matters to people." intro="Restore Healthcare Solutions is a Dublin 15 care organisation developing thoughtful support for children, adults, older people and the families around them.">
+      <PageHero eyebrow="About Restore" title="Built around what matters to people." intro="Restore Healthcare Solutions is a Dublin 15 care organisation developing thoughtful support for children, adults, older people and the families around them." image="/images/hero-about.webp" imageAlt="A diverse group sharing an equal, relaxed conversation around a community table">
         <Link className="button button--light" href="/services">Explore our support <ArrowRight size={18} /></Link>
       </PageHero>
       <section className="content-section">
