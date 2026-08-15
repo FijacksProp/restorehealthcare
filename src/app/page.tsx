@@ -4,9 +4,9 @@ import {
   ArrowRight,
   Clock3,
   HeartHandshake,
-  MapPinned,
   Sparkles,
   UserRoundCheck,
+  UsersRound,
 } from "lucide-react";
 import { CareCta, SectionHeading, ServiceCard } from "@/components/ui";
 import { articles, primaryServices, values } from "@/lib/site-data";
@@ -19,7 +19,7 @@ export default function Home() {
           <div className="home-hero__copy">
             <span className="eyebrow">Restore confidence. Support independence.</span>
             <h1>Care that makes room for <em>living.</em></h1>
-            <p>Person-centred disability support, home care and respite for children, adults and older people across Dublin 15.</p>
+            <p>Person-centred disability support, home care and respite for children, adults and older people.</p>
             <div className="home-hero__actions">
               <Link className="button button--light" href="/contact">Explore care options <ArrowRight size={18} /></Link>
               <Link className="button button--outline" href="/services">View our services</Link>
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container home-proof__inner">
           <div className="proof-item"><UserRoundCheck size={25} /><div><strong>Person-centred planning</strong><span>Support starts with the individual.</span></div></div>
           <div className="proof-item"><Clock3 size={25} /><div><strong>Flexible day & night support</strong><span>Planned around assessed needs.</span></div></div>
-          <div className="proof-item"><MapPinned size={25} /><div><strong>Local to Dublin 15</strong><span>Rooted in the community we support.</span></div></div>
+          <div className="proof-item"><UsersRound size={25} /><div><strong>Support across life stages</strong><span>For children, adults and older people.</span></div></div>
         </div>
       </div>
 

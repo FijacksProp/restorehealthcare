@@ -15,7 +15,10 @@ export const organisation = {
   name: "Restore Healthcare Solutions Limited",
   shortName: "Restore Healthcare",
   address: "53 Phibblestown Wood, Dublin 15, D15 R5DE, Ireland",
-  area: "Dublin 15 and surrounding communities",
+  landline: "01 646 4024",
+  landlineHref: "tel:+35316464024",
+  mobile: "087 366 7648",
+  mobileHref: "tel:+353873667648",
 };
 
 export type Service = {

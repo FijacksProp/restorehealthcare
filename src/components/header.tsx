@@ -5,7 +5,7 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Brand } from "@/components/brand";
-import { services } from "@/lib/site-data";
+import { organisation, services } from "@/lib/site-data";
 
 const links = [
   { href: "/about", label: "About" },
@@ -25,7 +25,11 @@ export function Header() {
     <header className="site-header">
       <div className="header-note">
         <div className="container header-note__inner">
-          <span>Person-centred support across Dublin 15</span>
+          <span className="header-note__contacts">
+            <a href={organisation.landlineHref}><span>Landline</span><strong>{organisation.landline}</strong></a>
+            <i aria-hidden="true" />
+            <a href={organisation.mobileHref}><span>Mobile</span><strong>{organisation.mobile}</strong></a>
+          </span>
           <span className="header-note__availability"><i /> Planned support available day and night</span>
         </div>
       </div>

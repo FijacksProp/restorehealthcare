@@ -4,7 +4,7 @@ import { ArrowRight, BriefcaseMedical } from "lucide-react";
 import { CareCta, PageHero, ServiceCard } from "@/components/ui";
 import { primaryServices, services } from "@/lib/site-data";
 
-export const metadata: Metadata = { title: "Care & Support Services", description: "Explore disability support, home care, respite, children and family support, older person support and community care in Dublin 15." };
+export const metadata: Metadata = { title: "Care & Support Services", description: "Explore disability support, home care, respite, children and family support, older person support and community care." };
 
 export default function ServicesPage() {
   const staffing = services.find((service) => service.slug === "healthcare-staffing")!;

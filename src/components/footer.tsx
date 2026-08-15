@@ -11,6 +11,10 @@ export function Footer() {
           <Brand light />
           <p>Thoughtful support for more independent, connected everyday lives.</p>
           <div className="footer-address"><MapPin size={18} /><span>{organisation.address}</span></div>
+          <div className="footer-phones">
+            <a href={organisation.landlineHref}><span>Landline</span><strong>{organisation.landline}</strong></a>
+            <a href={organisation.mobileHref}><span>Mobile</span><strong>{organisation.mobile}</strong></a>
+          </div>
         </div>
         <div className="footer-column">
           <h2>Support</h2>
