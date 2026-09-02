@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin } from "lucide-react";
 import { Brand } from "@/components/brand";
 import { organisation, services } from "@/lib/site-data";
 
@@ -11,6 +11,7 @@ export function Footer() {
           <Brand light />
           <p>Thoughtful support for more independent, connected everyday lives.</p>
           <div className="footer-address"><MapPin size={18} /><span>{organisation.address}</span></div>
+          <a className="footer-email" href={organisation.emailHref}><Mail size={18} /><span>{organisation.email}</span></a>
           <div className="footer-phones">
             <a href={organisation.landlineHref}><span>Landline</span><strong>{organisation.landline}</strong></a>
             <a href={organisation.mobileHref}><span>Mobile</span><strong>{organisation.mobile}</strong></a>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PolicyLayout } from "@/components/policy-layout";
+import { organisation } from "@/lib/site-data";
 
 export const metadata: Metadata = { title: "Privacy Notice", description: "Website privacy information for Restore Healthcare Solutions Limited." };
 
@@ -12,6 +13,6 @@ export default function PrivacyPage() {
     <section><h2>5. Sharing and storage</h2><p>Personal information should only be shared with authorised staff and carefully selected service providers where necessary. Information should not be sold. Appropriate contractual, security and transfer safeguards should be used whenever another organisation processes information for Restore.</p></section>
     <section><h2>6. Retention</h2><p>Information should be kept only for as long as required for the purpose for which it was collected, including any legal, safeguarding, insurance or contractual retention period. Confirmed retention schedules will take precedence over this general statement.</p></section>
     <section><h2>7. Individual rights</h2><p>Subject to applicable law, individuals may have rights to access, correct, erase or restrict the use of their information, object to certain processing, receive portable information and withdraw consent. They may also raise a concern with Ireland’s Data Protection Commission.</p></section>
-    <section><h2>8. Contact</h2><p>Telephone contact details are published on the Contact page. A dedicated privacy email address will be added before interactive data collection is enabled. Postal correspondence may be sent to the organisation’s registered address.</p></section>
+    <section><h2>8. Contact</h2><p>Privacy enquiries may be sent to <a href={organisation.emailHref}>{organisation.email}</a>. Telephone contact details are published on the Contact page, and postal correspondence may be sent to the organisation’s registered address.</p></section>
   </PolicyLayout>;
 }

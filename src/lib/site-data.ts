@@ -19,6 +19,8 @@ export const organisation = {
   landlineHref: "tel:+35316464024",
   mobile: "087 366 7648",
   mobileHref: "tel:+353873667648",
+  email: "info@restorehealth-care.org",
+  emailHref: "mailto:info@restorehealth-care.org",
 };
 
 export type Service = {

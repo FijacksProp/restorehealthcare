@@ -39,7 +39,6 @@ Vercel detects the Next.js static export automatically. Production response head
 
 ## Content to confirm before launch
 
-- Email address
 - Business and support hours
 - Final service coverage area
 - Operational service scope and 24-hour availability
@@ -47,4 +46,3 @@ Vercel detects the Next.js static export automatically. Production response head
 - Safeguarding and complaints contacts
 - Privacy contact and final policy review
 - Vacancies and recruitment contact details
-- Final domain for canonical metadata and sitemap

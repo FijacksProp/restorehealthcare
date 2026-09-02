@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Building2, Clock3, MapPin, Navigation, Phone } from "lucide-react";
+import { Building2, Clock3, Mail, MapPin, Navigation, Phone } from "lucide-react";
 import { PageHero, SectionHeading } from "@/components/ui";
 import { organisation } from "@/lib/site-data";
 
@@ -38,6 +38,14 @@ export default function ContactPage() {
                     <a href={organisation.landlineHref}><span>Landline</span><strong>{organisation.landline}</strong></a>
                     <a href={organisation.mobileHref}><span>Mobile</span><strong>{organisation.mobile}</strong></a>
                   </div>
+                </div>
+              </div>
+              <div className="contact-card">
+                <span className="contact-card__icon"><Mail size={21} /></span>
+                <div>
+                  <h2>Email our team</h2>
+                  <p>For general care, support and organisational enquiries.</p>
+                  <a href={organisation.emailHref}>{organisation.email}</a>
                 </div>
               </div>
               <div className="contact-card">
